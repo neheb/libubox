@@ -43,9 +43,9 @@
 #include <stdint.h>
 #include <time.h>
 #include <string.h>
+#include <assert.h>
 
 #include "avl.h"
-#include "assert.h"
 #include "list.h"
 
 /**
