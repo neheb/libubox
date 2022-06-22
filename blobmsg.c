@@ -364,6 +364,8 @@ blobmsg_add_string_buffer(struct blob_buf *buf)
 	int len, attrlen;
 
 	attr = blob_next(buf->head);
+	if (!attr)
+		return;
 	len = strlen(blobmsg_data(attr)) + 1;
 
 	attrlen = blob_raw_len(attr) + len;
