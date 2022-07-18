@@ -1,0 +1,13 @@
+option('examples', type : 'boolean',
+  value : true,
+  description : 'build examples',
+)
+
+option('lua', type : 'feature',
+  description : 'build lua bindings',
+)
+
+option('tests', type : 'boolean',
+  value : true,
+  description : 'build tests',
+)
